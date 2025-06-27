@@ -16,3 +16,13 @@
 [2025-06-27T17:12:02.983+0000] {logging_mixin.py:190} INFO - Current task name:sleep_20 state:running start_date:2025-06-27 17:12:02.645182+00:00
 [2025-06-27T17:12:02.984+0000] {logging_mixin.py:190} INFO - Dag name:example_sla_dag and current dag run status:running
 [2025-06-27T17:12:02.985+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-27T17:12:22.985+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-06-27T17:12:23.000+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-27T17:12:23.001+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=example_sla_dag, task_id=sleep_20, run_id=scheduled__2025-06-27T17:10:00+00:00, execution_date=20250627T171000, start_date=20250627T171202, end_date=20250627T171223
+[2025-06-27T17:12:23.037+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-27T17:12:23.038+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-27T17:12:23.038+0000] {logging_mixin.py:190} INFO - Dag name:example_sla_dag queued_at:2025-06-27 17:12:00.982894+00:00
+[2025-06-27T17:12:23.039+0000] {logging_mixin.py:190} INFO - Task hostname:a5c304807a12 operator:_PythonDecoratedOperator
+[2025-06-27T17:12:23.051+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-27T17:12:23.072+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-27T17:12:23.075+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
