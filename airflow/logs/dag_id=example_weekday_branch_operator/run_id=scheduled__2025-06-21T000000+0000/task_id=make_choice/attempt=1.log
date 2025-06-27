@@ -1,0 +1,59 @@
+[2025-06-22T12:22:41.770+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:22:41.827+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:22:41.850+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:22:41.858+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:22:41.902+0000] {taskinstance.py:2890} INFO - Executing <Task(BranchDayOfWeekOperator): make_choice> on 2025-06-21 00:00:00+00:00
+[2025-06-22T12:22:41.923+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=117) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:22:41.926+0000] {standard_task_runner.py:72} INFO - Started process 178 to run task
+[2025-06-22T12:22:41.927+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_weekday_branch_operator', 'make_choice', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '16', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_branch_day_of_week_operator.py', '--cfg-path', '/tmp/tmpr94kcdrk']
+[2025-06-22T12:22:41.930+0000] {standard_task_runner.py:105} INFO - Job 16: Subtask make_choice
+[2025-06-22T12:22:42.449+0000] {task_command.py:467} INFO - Running <TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-06-21T00:00:00+00:00 [running]> on host 342e1477a02c
+[2025-06-22T12:22:42.688+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_weekday_branch_operator' AIRFLOW_CTX_TASK_ID='make_choice' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-22T12:22:42.691+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:22:42.694+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:22:42.695+0000] {logging_mixin.py:190} INFO - Current task name:make_choice state:running start_date:2025-06-22 12:22:41.830526+00:00
+[2025-06-22T12:22:42.702+0000] {logging_mixin.py:190} INFO - Dag name:example_weekday_branch_operator and current dag run status:running
+[2025-06-22T12:22:42.704+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:22:42.704+0000] {branch.py:38} INFO - Branch into branch_false
+[2025-06-22T12:22:42.706+0000] {skipmixin.py:233} INFO - Following branch ('branch_false',)
+[2025-06-22T12:22:42.739+0000] {skipmixin.py:281} INFO - Skipping tasks [('branch_true', -1)]
+[2025-06-22T12:22:42.820+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:22:42.822+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=example_weekday_branch_operator, task_id=make_choice, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250622T122241, end_date=20250622T122242
+[2025-06-22T12:22:42.902+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-22T12:22:42.906+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-22T12:22:42.914+0000] {logging_mixin.py:190} INFO - Dag name:example_weekday_branch_operator queued_at:2025-06-22 12:22:37.758557+00:00
+[2025-06-22T12:22:42.920+0000] {logging_mixin.py:190} INFO - Task hostname:342e1477a02c operator:BranchDayOfWeekOperator
+[2025-06-22T12:22:42.999+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:22:43.345+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T12:22:43.350+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-22T12:37:58.023+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:37:58.059+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:37:58.076+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:37:58.076+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:37:58.422+0000] {taskinstance.py:2890} INFO - Executing <Task(BranchDayOfWeekOperator): make_choice> on 2025-06-21 00:00:00+00:00
+[2025-06-22T12:37:58.450+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=119) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:37:58.454+0000] {standard_task_runner.py:72} INFO - Started process 171 to run task
+[2025-06-22T12:37:58.456+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_weekday_branch_operator', 'make_choice', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '17', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_branch_day_of_week_operator.py', '--cfg-path', '/tmp/tmp_9ph2zet']
+[2025-06-22T12:37:58.458+0000] {standard_task_runner.py:105} INFO - Job 17: Subtask make_choice
+[2025-06-22T12:37:58.643+0000] {task_command.py:467} INFO - Running <TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-06-21T00:00:00+00:00 [running]> on host a5c304807a12
+[2025-06-22T12:37:58.868+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_weekday_branch_operator' AIRFLOW_CTX_TASK_ID='make_choice' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-22T12:37:58.874+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:37:58.875+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:37:58.876+0000] {logging_mixin.py:190} INFO - Current task name:make_choice state:running start_date:2025-06-22 12:37:58.060844+00:00
+[2025-06-22T12:37:58.876+0000] {logging_mixin.py:190} INFO - Dag name:example_weekday_branch_operator and current dag run status:running
+[2025-06-22T12:37:58.877+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:37:58.878+0000] {branch.py:38} INFO - Branch into branch_false
+[2025-06-22T12:37:58.881+0000] {skipmixin.py:233} INFO - Following branch ('branch_false',)
+[2025-06-22T12:37:58.920+0000] {skipmixin.py:281} INFO - Skipping tasks [('branch_true', -1)]
+[2025-06-22T12:37:59.013+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:37:59.021+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=example_weekday_branch_operator, task_id=make_choice, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250622T123758, end_date=20250622T123759
+[2025-06-22T12:37:59.097+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-22T12:37:59.101+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-22T12:37:59.102+0000] {logging_mixin.py:190} INFO - Dag name:example_weekday_branch_operator queued_at:2025-06-22 12:37:53.233439+00:00
+[2025-06-22T12:37:59.105+0000] {logging_mixin.py:190} INFO - Task hostname:a5c304807a12 operator:BranchDayOfWeekOperator
+[2025-06-22T12:37:59.176+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:37:59.201+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

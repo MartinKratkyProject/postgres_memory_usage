@@ -1,0 +1,61 @@
+[2025-06-22T12:22:50.184+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:22:50.234+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataset_with_extra_by_yield.dataset_with_extra_by_yield scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:22:50.264+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataset_with_extra_by_yield.dataset_with_extra_by_yield scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:22:50.267+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:22:50.801+0000] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): dataset_with_extra_by_yield> on 2025-06-21 00:00:00+00:00
+[2025-06-22T12:22:50.824+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=229) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:22:50.829+0000] {standard_task_runner.py:72} INFO - Started process 261 to run task
+[2025-06-22T12:22:50.832+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dataset_with_extra_by_yield', 'dataset_with_extra_by_yield', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '37', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_outlet_event_extra.py', '--cfg-path', '/tmp/tmpfaxiv7e3']
+[2025-06-22T12:22:50.836+0000] {standard_task_runner.py:105} INFO - Job 37: Subtask dataset_with_extra_by_yield
+[2025-06-22T12:22:50.986+0000] {task_command.py:467} INFO - Running <TaskInstance: dataset_with_extra_by_yield.dataset_with_extra_by_yield scheduled__2025-06-21T00:00:00+00:00 [running]> on host 342e1477a02c
+[2025-06-22T12:22:51.216+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dataset_with_extra_by_yield' AIRFLOW_CTX_TASK_ID='dataset_with_extra_by_yield' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-22T12:22:51.228+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:22:51.229+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:22:51.233+0000] {logging_mixin.py:190} INFO - Current task name:dataset_with_extra_by_yield state:running start_date:2025-06-22 12:22:50.237039+00:00
+[2025-06-22T12:22:51.236+0000] {logging_mixin.py:190} INFO - Dag name:dataset_with_extra_by_yield and current dag run status:running
+[2025-06-22T12:22:51.240+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:22:51.245+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/operator_helpers.py:262: DeprecationWarning: Accessing outlet_events using string is deprecated and will be removed in Airflow 3. Please use the Dataset or DatasetAlias object (renamed as Asset and AssetAlias in Airflow 3) directly
+  self.outlet_events[metadata.uri].extra.update(metadata.extra)
+
+[2025-06-22T12:22:51.258+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-06-22T12:22:51.326+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:22:51.332+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=dataset_with_extra_by_yield, task_id=dataset_with_extra_by_yield, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250622T122250, end_date=20250622T122251
+[2025-06-22T12:22:51.479+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-22T12:22:51.483+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-22T12:22:51.484+0000] {logging_mixin.py:190} INFO - Dag name:dataset_with_extra_by_yield queued_at:2025-06-22 12:22:45.497364+00:00
+[2025-06-22T12:22:51.494+0000] {logging_mixin.py:190} INFO - Task hostname:342e1477a02c operator:_PythonDecoratedOperator
+[2025-06-22T12:22:51.555+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:22:51.589+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T12:22:51.594+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-22T12:38:06.018+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:38:06.044+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataset_with_extra_by_yield.dataset_with_extra_by_yield scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:38:06.058+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataset_with_extra_by_yield.dataset_with_extra_by_yield scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:38:06.059+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:38:06.333+0000] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): dataset_with_extra_by_yield> on 2025-06-21 00:00:00+00:00
+[2025-06-22T12:38:06.346+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=219) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:38:06.349+0000] {standard_task_runner.py:72} INFO - Started process 262 to run task
+[2025-06-22T12:38:06.351+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dataset_with_extra_by_yield', 'dataset_with_extra_by_yield', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '38', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_outlet_event_extra.py', '--cfg-path', '/tmp/tmptkjk3cbf']
+[2025-06-22T12:38:06.353+0000] {standard_task_runner.py:105} INFO - Job 38: Subtask dataset_with_extra_by_yield
+[2025-06-22T12:38:06.498+0000] {task_command.py:467} INFO - Running <TaskInstance: dataset_with_extra_by_yield.dataset_with_extra_by_yield scheduled__2025-06-21T00:00:00+00:00 [running]> on host a5c304807a12
+[2025-06-22T12:38:06.719+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dataset_with_extra_by_yield' AIRFLOW_CTX_TASK_ID='dataset_with_extra_by_yield' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-22T12:38:06.728+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:38:06.729+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:38:06.730+0000] {logging_mixin.py:190} INFO - Current task name:dataset_with_extra_by_yield state:running start_date:2025-06-22 12:38:06.046197+00:00
+[2025-06-22T12:38:06.731+0000] {logging_mixin.py:190} INFO - Dag name:dataset_with_extra_by_yield and current dag run status:running
+[2025-06-22T12:38:06.731+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:38:06.733+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/operator_helpers.py:262: DeprecationWarning: Accessing outlet_events using string is deprecated and will be removed in Airflow 3. Please use the Dataset or DatasetAlias object (renamed as Asset and AssetAlias in Airflow 3) directly
+  self.outlet_events[metadata.uri].extra.update(metadata.extra)
+
+[2025-06-22T12:38:06.734+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-06-22T12:38:06.795+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:38:06.796+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=dataset_with_extra_by_yield, task_id=dataset_with_extra_by_yield, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250622T123806, end_date=20250622T123806
+[2025-06-22T12:38:06.892+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-22T12:38:06.895+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-22T12:38:06.899+0000] {logging_mixin.py:190} INFO - Dag name:dataset_with_extra_by_yield queued_at:2025-06-22 12:38:00.526805+00:00
+[2025-06-22T12:38:06.905+0000] {logging_mixin.py:190} INFO - Task hostname:a5c304807a12 operator:_PythonDecoratedOperator
+[2025-06-22T12:38:06.977+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:38:07.011+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,31 @@
+[2025-06-22T12:22:50.160+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:22:50.204+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataset_consumes_1.consuming_1 dataset_triggered__2025-06-22T12:22:45.051990+00:00 [queued]>
+[2025-06-22T12:22:50.234+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataset_consumes_1.consuming_1 dataset_triggered__2025-06-22T12:22:45.051990+00:00 [queued]>
+[2025-06-22T12:22:50.235+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:22:50.836+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): consuming_1> on 2025-06-22 12:22:45.051990+00:00
+[2025-06-22T12:22:50.871+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=217) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:22:50.874+0000] {standard_task_runner.py:72} INFO - Started process 263 to run task
+[2025-06-22T12:22:50.874+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dataset_consumes_1', 'consuming_1', 'dataset_triggered__2025-06-22T12:22:45.051990+00:00', '--job-id', '36', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_datasets.py', '--cfg-path', '/tmp/tmpe0csom9v']
+[2025-06-22T12:22:50.887+0000] {standard_task_runner.py:105} INFO - Job 36: Subtask consuming_1
+[2025-06-22T12:22:51.072+0000] {task_command.py:467} INFO - Running <TaskInstance: dataset_consumes_1.consuming_1 dataset_triggered__2025-06-22T12:22:45.051990+00:00 [running]> on host 342e1477a02c
+[2025-06-22T12:22:51.292+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dataset_consumes_1' AIRFLOW_CTX_TASK_ID='consuming_1' AIRFLOW_CTX_EXECUTION_DATE='2025-06-22T12:22:45.051990+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='dataset_triggered__2025-06-22T12:22:45.051990+00:00'
+[2025-06-22T12:22:51.297+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:22:51.297+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:22:51.298+0000] {logging_mixin.py:190} INFO - Current task name:consuming_1 state:running start_date:2025-06-22 12:22:50.211192+00:00
+[2025-06-22T12:22:51.298+0000] {logging_mixin.py:190} INFO - Dag name:dataset_consumes_1 and current dag run status:running
+[2025-06-22T12:22:51.299+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:22:51.302+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-06-22T12:22:51.310+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 5']
+[2025-06-22T12:22:51.349+0000] {subprocess.py:99} INFO - Output:
+[2025-06-22T12:22:56.350+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-06-22T12:22:56.397+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:22:56.397+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=dataset_consumes_1, task_id=consuming_1, run_id=dataset_triggered__2025-06-22T12:22:45.051990+00:00, execution_date=20250622T122245, start_date=20250622T122250, end_date=20250622T122256
+[2025-06-22T12:22:56.452+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-22T12:22:56.452+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-22T12:22:56.453+0000] {logging_mixin.py:190} INFO - Dag name:dataset_consumes_1 queued_at:2025-06-22 12:22:45.635048+00:00
+[2025-06-22T12:22:56.453+0000] {logging_mixin.py:190} INFO - Task hostname:342e1477a02c operator:BashOperator
+[2025-06-22T12:22:56.502+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:22:56.516+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T12:22:56.519+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

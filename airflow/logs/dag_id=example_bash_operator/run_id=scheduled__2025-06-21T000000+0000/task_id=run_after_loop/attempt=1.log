@@ -1,0 +1,64 @@
+[2025-06-22T12:22:52.949+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:22:52.974+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_bash_operator.run_after_loop scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:22:52.991+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_bash_operator.run_after_loop scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:22:52.992+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:22:53.177+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): run_after_loop> on 2025-06-21 00:00:00+00:00
+[2025-06-22T12:22:53.185+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=243) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:22:53.188+0000] {standard_task_runner.py:72} INFO - Started process 286 to run task
+[2025-06-22T12:22:53.188+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_bash_operator', 'run_after_loop', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_bash_operator.py', '--cfg-path', '/tmp/tmppzvnbk9t']
+[2025-06-22T12:22:53.191+0000] {standard_task_runner.py:105} INFO - Job 43: Subtask run_after_loop
+[2025-06-22T12:22:53.279+0000] {task_command.py:467} INFO - Running <TaskInstance: example_bash_operator.run_after_loop scheduled__2025-06-21T00:00:00+00:00 [running]> on host 342e1477a02c
+[2025-06-22T12:22:53.396+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_bash_operator' AIRFLOW_CTX_TASK_ID='run_after_loop' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-22T12:22:53.397+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:22:53.398+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:22:53.398+0000] {logging_mixin.py:190} INFO - Current task name:run_after_loop state:running start_date:2025-06-22 12:22:52.975322+00:00
+[2025-06-22T12:22:53.398+0000] {logging_mixin.py:190} INFO - Dag name:example_bash_operator and current dag run status:running
+[2025-06-22T12:22:53.399+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:22:53.400+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-06-22T12:22:53.401+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'echo https://***.apache.org/']
+[2025-06-22T12:22:53.417+0000] {subprocess.py:99} INFO - Output:
+[2025-06-22T12:22:53.421+0000] {subprocess.py:106} INFO - https://***.apache.org/
+[2025-06-22T12:22:53.422+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-06-22T12:22:53.448+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:22:53.449+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=example_bash_operator, task_id=run_after_loop, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250622T122252, end_date=20250622T122253
+[2025-06-22T12:22:53.476+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-22T12:22:53.476+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-22T12:22:53.477+0000] {logging_mixin.py:190} INFO - Dag name:example_bash_operator queued_at:2025-06-22 12:22:41.022971+00:00
+[2025-06-22T12:22:53.477+0000] {logging_mixin.py:190} INFO - Task hostname:342e1477a02c operator:BashOperator
+[2025-06-22T12:22:53.526+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:22:53.547+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T12:22:53.552+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-22T12:38:09.739+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:38:09.776+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_bash_operator.run_after_loop scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:38:09.794+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_bash_operator.run_after_loop scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:38:09.795+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:38:10.049+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): run_after_loop> on 2025-06-21 00:00:00+00:00
+[2025-06-22T12:38:10.063+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=270) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:38:10.065+0000] {standard_task_runner.py:72} INFO - Started process 310 to run task
+[2025-06-22T12:38:10.066+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_bash_operator', 'run_after_loop', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '50', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_bash_operator.py', '--cfg-path', '/tmp/tmp3wxzkqho']
+[2025-06-22T12:38:10.068+0000] {standard_task_runner.py:105} INFO - Job 50: Subtask run_after_loop
+[2025-06-22T12:38:10.159+0000] {task_command.py:467} INFO - Running <TaskInstance: example_bash_operator.run_after_loop scheduled__2025-06-21T00:00:00+00:00 [running]> on host a5c304807a12
+[2025-06-22T12:38:10.274+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_bash_operator' AIRFLOW_CTX_TASK_ID='run_after_loop' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-22T12:38:10.276+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:38:10.277+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:38:10.281+0000] {logging_mixin.py:190} INFO - Current task name:run_after_loop state:running start_date:2025-06-22 12:38:09.777437+00:00
+[2025-06-22T12:38:10.282+0000] {logging_mixin.py:190} INFO - Dag name:example_bash_operator and current dag run status:running
+[2025-06-22T12:38:10.282+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:38:10.284+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-06-22T12:38:10.286+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'echo https://***.apache.org/']
+[2025-06-22T12:38:10.311+0000] {subprocess.py:99} INFO - Output:
+[2025-06-22T12:38:10.313+0000] {subprocess.py:106} INFO - https://***.apache.org/
+[2025-06-22T12:38:10.315+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-06-22T12:38:10.351+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:38:10.355+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=example_bash_operator, task_id=run_after_loop, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250622T123809, end_date=20250622T123810
+[2025-06-22T12:38:10.405+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-22T12:38:10.406+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-22T12:38:10.407+0000] {logging_mixin.py:190} INFO - Dag name:example_bash_operator queued_at:2025-06-22 12:37:55.075401+00:00
+[2025-06-22T12:38:10.407+0000] {logging_mixin.py:190} INFO - Task hostname:a5c304807a12 operator:BashOperator
+[2025-06-22T12:38:10.442+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:38:10.462+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T12:38:10.467+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

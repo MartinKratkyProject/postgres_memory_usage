@@ -1,0 +1,30 @@
+[2025-06-27T16:58:14.745+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-27T16:58:14.786+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_weekday_branch_operator.make_weekend_choice scheduled__2025-06-22T00:00:00+00:00 [queued]>
+[2025-06-27T16:58:14.802+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_weekday_branch_operator.make_weekend_choice scheduled__2025-06-22T00:00:00+00:00 [queued]>
+[2025-06-27T16:58:14.804+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-27T16:58:15.102+0000] {taskinstance.py:2890} INFO - Executing <Task(BranchDayOfWeekOperator): make_weekend_choice> on 2025-06-22 00:00:00+00:00
+[2025-06-27T16:58:15.118+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=335) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-27T16:58:15.121+0000] {standard_task_runner.py:72} INFO - Started process 370 to run task
+[2025-06-27T16:58:15.121+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_weekday_branch_operator', 'make_weekend_choice', 'scheduled__2025-06-22T00:00:00+00:00', '--job-id', '131', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_branch_day_of_week_operator.py', '--cfg-path', '/tmp/tmptid9syc0']
+[2025-06-27T16:58:15.125+0000] {standard_task_runner.py:105} INFO - Job 131: Subtask make_weekend_choice
+[2025-06-27T16:58:15.206+0000] {task_command.py:467} INFO - Running <TaskInstance: example_weekday_branch_operator.make_weekend_choice scheduled__2025-06-22T00:00:00+00:00 [running]> on host a5c304807a12
+[2025-06-27T16:58:15.329+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_weekday_branch_operator' AIRFLOW_CTX_TASK_ID='make_weekend_choice' AIRFLOW_CTX_EXECUTION_DATE='2025-06-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-22T00:00:00+00:00'
+[2025-06-27T16:58:15.331+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-27T16:58:15.331+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-27T16:58:15.334+0000] {logging_mixin.py:190} INFO - Current task name:make_weekend_choice state:running start_date:2025-06-27 16:58:14.787078+00:00
+[2025-06-27T16:58:15.334+0000] {logging_mixin.py:190} INFO - Dag name:example_weekday_branch_operator and current dag run status:running
+[2025-06-27T16:58:15.335+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-27T16:58:15.336+0000] {branch.py:38} INFO - Branch into branch_mid_week
+[2025-06-27T16:58:15.337+0000] {skipmixin.py:233} INFO - Following branch ('branch_mid_week',)
+[2025-06-27T16:58:15.351+0000] {skipmixin.py:281} INFO - Skipping tasks [('branch_weekend', -1)]
+[2025-06-27T16:58:15.412+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-27T16:58:15.413+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=example_weekday_branch_operator, task_id=make_weekend_choice, run_id=scheduled__2025-06-22T00:00:00+00:00, execution_date=20250622T000000, start_date=20250627T165814, end_date=20250627T165815
+[2025-06-27T16:58:15.455+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-27T16:58:15.456+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-27T16:58:15.457+0000] {logging_mixin.py:190} INFO - Dag name:example_weekday_branch_operator queued_at:2025-06-27 16:57:54.928671+00:00
+[2025-06-27T16:58:15.458+0000] {logging_mixin.py:190} INFO - Task hostname:a5c304807a12 operator:BranchDayOfWeekOperator
+[2025-06-27T16:58:15.498+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-27T16:58:15.525+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-27T16:58:15.531+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

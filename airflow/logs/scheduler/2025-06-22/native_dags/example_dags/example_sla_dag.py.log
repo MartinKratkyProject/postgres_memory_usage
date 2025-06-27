@@ -1,0 +1,253 @@
+[2025-06-22T12:22:48.255+0000] {processor.py:186} INFO - Started process (PID=186) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:22:48.260+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:22:48.264+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.264+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:22:48.294+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:22:48.462+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.461+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:example_sla_dag
+[2025-06-22T12:22:48.479+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.478+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_sla_dag
+[2025-06-22T12:22:48.491+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.490+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_sla_dag
+[2025-06-22T12:22:48.505+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.505+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_sla_dag
+[2025-06-22T12:22:48.515+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.515+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_sla_dag
+[2025-06-22T12:22:48.535+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.535+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_sla_dag
+[2025-06-22T12:22:48.555+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.554+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_sla_dag
+[2025-06-22T12:22:48.555+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.555+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:22:48.581+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.581+0000] {dag.py:3262} INFO - Creating ORM DAG for example_sla_dag
+[2025-06-22T12:22:48.609+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:22:48.609+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:20:00+00:00, run_after=2025-06-22 12:22:00+00:00
+[2025-06-22T12:22:48.667+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.426 seconds
+[2025-06-22T12:23:19.061+0000] {processor.py:186} INFO - Started process (PID=272) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:23:19.063+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:23:19.066+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:23:19.065+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:23:19.077+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:23:19.078+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:23:19.078+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:23:19.094+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:23:19.094+0000] {processor.py:457} INFO - Running SLA Checks for example_sla_dag
+[2025-06-22T12:23:19.126+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:23:19.126+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:23:19.142+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:23:19.142+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:22:00+00:00, run_after=2025-06-22 12:24:00+00:00
+[2025-06-22T12:23:19.160+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.106 seconds
+[2025-06-22T12:27:23.739+0000] {processor.py:186} INFO - Started process (PID=138) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:27:23.740+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:27:23.742+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.742+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:27:23.755+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:27:23.756+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.756+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:27:23.771+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.771+0000] {processor.py:457} INFO - Running SLA Checks for example_sla_dag
+[2025-06-22T12:27:23.817+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.817+0000] {processor.py:555} INFO - Calling SLA miss callback <function sla_callback at 0x7fa302df5d00>
+[2025-06-22T12:27:23.818+0000] {logging_mixin.py:190} INFO - The callback arguments are:  {'dag': <DAG: example_sla_dag>, 'task_list': 'sleep_20 on 2025-06-22T12:24:00+00:00\nsleep_20 on 2025-06-22T12:26:00+00:00', 'blocking_task_list': 'sleep_20 on 2025-06-22T12:24:00+00:00', 'slas': [('example_sla_dag', 'sleep_20', '2025-06-22T12:24:00+00:00'), ('example_sla_dag', 'sleep_20', '2025-06-22T12:26:00+00:00')], 'blocking_tis': [<TaskInstance: example_sla_dag.sleep_20 scheduled__2025-06-22T12:24:00+00:00 [running]>]}
+[2025-06-22T12:27:23.827+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py:155 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2025-06-22T12:27:23.828+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.828+0000] {configuration.py:1074} WARNING - section/key [smtp/smtp_user] not found in config
+[2025-06-22T12:27:23.829+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.828+0000] {email.py:272} INFO - Email alerting: attempt 1
+[2025-06-22T12:27:23.832+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.829+0000] {processor.py:606} ERROR - Could not send SLA Miss email notification for DAG example_sla_dag
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/processor.py", line 601, in manage_slas
+    send_email(emails, f"[airflow] SLA miss on DAG={dag.dag_id}", email_content)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+           ^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 274, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 318, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.12/socket.py", line 850, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-06-22T12:27:23.853+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.853+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:27:23.876+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:23.875+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:26:00+00:00, run_after=2025-06-22 12:28:00+00:00
+[2025-06-22T12:27:23.895+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.163 seconds
+[2025-06-22T12:27:54.350+0000] {processor.py:186} INFO - Started process (PID=210) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:27:54.351+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:27:54.354+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:54.354+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:27:54.364+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:27:54.365+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:54.365+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:27:54.379+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:54.379+0000] {processor.py:457} INFO - Running SLA Checks for example_sla_dag
+[2025-06-22T12:27:54.409+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:54.409+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:27:54.427+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:27:54.427+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:26:00+00:00, run_after=2025-06-22 12:28:00+00:00
+[2025-06-22T12:27:54.443+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.099 seconds
+[2025-06-22T12:28:25.164+0000] {processor.py:186} INFO - Started process (PID=280) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:28:25.165+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:28:25.167+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:25.167+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:28:25.177+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:28:25.178+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:25.178+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:28:25.192+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:25.192+0000] {processor.py:457} INFO - Running SLA Checks for example_sla_dag
+[2025-06-22T12:28:25.225+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:25.225+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:28:25.242+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:25.242+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:28:00+00:00, run_after=2025-06-22 12:30:00+00:00
+[2025-06-22T12:28:25.280+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.122 seconds
+[2025-06-22T12:28:49.239+0000] {processor.py:186} INFO - Started process (PID=292) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:28:49.240+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:28:49.242+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.242+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:28:49.252+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:28:49.253+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.253+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:28:49.267+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.267+0000] {processor.py:457} INFO - Running SLA Checks for example_sla_dag
+[2025-06-22T12:28:49.293+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.293+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'example_sla_dag', 'Task Id': 'sleep_30', 'Run Id': 'scheduled__2025-06-22T12:20:00+00:00', 'Hostname': '342e1477a02c', 'External Executor Id': 'd64a51e9-7187-4d5b-9141-af75e8eb4a9e'}
+[2025-06-22T12:28:49.306+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-06-22T12:28:49.307+0000] {logging_mixin.py:190} INFO - Task start:2025-06-22 12:23:16.240911+00:00 end:2025-06-22 12:28:49.297976+00:00 duration:333.057065
+[2025-06-22T12:28:49.307+0000] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): sleep_30> dag:<DAG: example_sla_dag> dagrun:<DagRun example_sla_dag @ 2025-06-22 12:20:00+00:00: scheduled__2025-06-22T12:20:00+00:00, state:running, queued_at: 2025-06-22 12:22:48.969394+00:00. externally triggered: False>
+[2025-06-22T12:28:49.308+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'example_sla_dag', 'Task Id': 'sleep_30', 'Run Id': 'scheduled__2025-06-22T12:20:00+00:00', 'Hostname': '342e1477a02c', 'External Executor Id': 'd64a51e9-7187-4d5b-9141-af75e8eb4a9e'}
+[2025-06-22T12:28:49.308+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.308+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=example_sla_dag, task_id=sleep_30, run_id=scheduled__2025-06-22T12:20:00+00:00, execution_date=20250622T122000, start_date=20250622T122316, end_date=20250622T122849
+[2025-06-22T12:28:49.325+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py:155 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2025-06-22T12:28:49.326+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.326+0000] {configuration.py:1074} WARNING - section/key [smtp/smtp_user] not found in config
+[2025-06-22T12:28:49.327+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.326+0000] {email.py:272} INFO - Email alerting: attempt 1
+[2025-06-22T12:28:49.329+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.329+0000] {configuration.py:1074} WARNING - section/key [smtp/smtp_user] not found in config
+[2025-06-22T12:28:49.330+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.330+0000] {email.py:272} INFO - Email alerting: attempt 1
+[2025-06-22T12:28:49.332+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.331+0000] {taskinstance.py:1235} ERROR - Failed to send email to: email@example.com
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1443, in _email_alert
+    send_email(task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+           ^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 274, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 318, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.12/socket.py", line 850, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1233, in _handle_failure
+    task_instance.email_alert(error, failure_context["task"])
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3611, in email_alert
+    _email_alert(task_instance=self, exception=exception, task=task)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1445, in _email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+           ^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 274, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 318, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.12/socket.py", line 850, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-06-22T12:28:49.346+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.346+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: example_sla_dag.sleep_30 scheduled__2025-06-22T12:20:00+00:00 [failed]> in state failed
+[2025-06-22T12:28:49.356+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.355+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:28:49.370+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:28:49.370+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:28:00+00:00, run_after=2025-06-22 12:30:00+00:00
+[2025-06-22T12:28:49.384+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.151 seconds
+[2025-06-22T12:29:20.005+0000] {processor.py:186} INFO - Started process (PID=367) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:29:20.005+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:29:20.008+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:29:20.007+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:29:20.017+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:29:20.018+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:29:20.018+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:29:20.031+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:29:20.031+0000] {processor.py:457} INFO - Running SLA Checks for example_sla_dag
+[2025-06-22T12:29:20.061+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:29:20.060+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:29:20.077+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:29:20.077+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:28:00+00:00, run_after=2025-06-22 12:30:00+00:00
+[2025-06-22T12:29:20.093+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.093 seconds
+[2025-06-22T12:29:50.617+0000] {processor.py:186} INFO - Started process (PID=431) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:29:50.618+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:29:50.620+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:29:50.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:29:50.628+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:29:50.645+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:29:50.645+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:29:50.667+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:29:50.667+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:28:00+00:00, run_after=2025-06-22 12:30:00+00:00
+[2025-06-22T12:29:50.683+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.071 seconds
+[2025-06-22T12:30:21.199+0000] {processor.py:186} INFO - Started process (PID=501) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:30:21.200+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:30:21.202+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.202+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:30:21.212+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:30:21.213+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.212+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:30:21.225+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.225+0000] {processor.py:457} INFO - Running SLA Checks for example_sla_dag
+[2025-06-22T12:30:21.258+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.257+0000] {processor.py:555} INFO - Calling SLA miss callback <function sla_callback at 0x7fa302dfdd00>
+[2025-06-22T12:30:21.258+0000] {logging_mixin.py:190} INFO - The callback arguments are:  {'dag': <DAG: example_sla_dag>, 'task_list': 'sleep_20 on 2025-06-22T12:30:00+00:00', 'blocking_task_list': '', 'slas': [('example_sla_dag', 'sleep_20', '2025-06-22T12:30:00+00:00')], 'blocking_tis': []}
+[2025-06-22T12:30:21.265+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py:155 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2025-06-22T12:30:21.266+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.266+0000] {configuration.py:1074} WARNING - section/key [smtp/smtp_user] not found in config
+[2025-06-22T12:30:21.266+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.266+0000] {email.py:272} INFO - Email alerting: attempt 1
+[2025-06-22T12:30:21.269+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.267+0000] {processor.py:606} ERROR - Could not send SLA Miss email notification for DAG example_sla_dag
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/processor.py", line 601, in manage_slas
+    send_email(emails, f"[airflow] SLA miss on DAG={dag.dag_id}", email_content)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+           ^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 274, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/email.py", line 318, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.12/socket.py", line 850, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-06-22T12:30:21.283+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.282+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:30:21.297+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:30:21.297+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:30:00+00:00, run_after=2025-06-22 12:32:00+00:00
+[2025-06-22T12:30:21.311+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.117 seconds
+[2025-06-22T12:38:02.984+0000] {processor.py:186} INFO - Started process (PID=201) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:38:02.987+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:38:03.001+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.000+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:38:03.039+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:38:03.310+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.309+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_sla_dag
+[2025-06-22T12:38:03.353+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.353+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_sla_dag
+[2025-06-22T12:38:03.417+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.416+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:example_sla_dag
+[2025-06-22T12:38:03.458+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.457+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_sla_dag
+[2025-06-22T12:38:03.495+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.494+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_sla_dag
+[2025-06-22T12:38:03.514+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.512+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_sla_dag
+[2025-06-22T12:38:03.544+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.544+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_sla_dag
+[2025-06-22T12:38:03.547+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.546+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:38:03.587+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.586+0000] {dag.py:3262} INFO - Creating ORM DAG for example_sla_dag
+[2025-06-22T12:38:03.616+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:03.615+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:36:00+00:00, run_after=2025-06-22 12:38:00+00:00
+[2025-06-22T12:38:03.687+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.718 seconds
+[2025-06-22T12:38:33.820+0000] {processor.py:186} INFO - Started process (PID=286) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:38:33.822+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-06-22T12:38:33.825+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:33.824+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:38:33.836+0000] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:38:33.837+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:33.837+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-06-22T12:38:33.856+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:33.856+0000] {processor.py:457} INFO - Running SLA Checks for example_sla_dag
+[2025-06-22T12:38:33.892+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:33.892+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-22T12:38:33.911+0000] {logging_mixin.py:190} INFO - [2025-06-22T12:38:33.911+0000] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-06-22 12:38:00+00:00, run_after=2025-06-22 12:40:00+00:00
+[2025-06-22T12:38:33.939+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py took 0.126 seconds

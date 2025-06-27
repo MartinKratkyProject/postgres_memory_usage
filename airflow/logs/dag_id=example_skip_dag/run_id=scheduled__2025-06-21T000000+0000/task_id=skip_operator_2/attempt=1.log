@@ -1,0 +1,46 @@
+[2025-06-22T12:22:41.726+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:22:41.763+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:22:41.783+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:22:41.784+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:22:41.834+0000] {taskinstance.py:2890} INFO - Executing <Task(EmptySkipOperator): skip_operator_2> on 2025-06-21 00:00:00+00:00
+[2025-06-22T12:22:41.849+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=119) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:22:41.853+0000] {standard_task_runner.py:72} INFO - Started process 176 to run task
+[2025-06-22T12:22:41.857+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_skip_dag', 'skip_operator_2', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '15', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_skip_dag.py', '--cfg-path', '/tmp/tmpz5prb9ng']
+[2025-06-22T12:22:41.860+0000] {standard_task_runner.py:105} INFO - Job 15: Subtask skip_operator_2
+[2025-06-22T12:22:42.498+0000] {task_command.py:467} INFO - Running <TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-06-21T00:00:00+00:00 [running]> on host 342e1477a02c
+[2025-06-22T12:22:42.699+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_skip_dag' AIRFLOW_CTX_TASK_ID='skip_operator_2' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-22T12:22:42.703+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:22:42.704+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:22:42.706+0000] {logging_mixin.py:190} INFO - Current task name:skip_operator_2 state:running start_date:2025-06-22 12:22:41.764643+00:00
+[2025-06-22T12:22:42.709+0000] {logging_mixin.py:190} INFO - Dag name:example_skip_dag and current dag run status:running
+[2025-06-22T12:22:42.711+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:22:42.802+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:22:42.805+0000] {taskinstance.py:353} INFO - Marking task as SKIPPED. dag_id=example_skip_dag, task_id=skip_operator_2, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250622T122241, end_date=20250622T122242
+[2025-06-22T12:22:42.954+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:22:43.322+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T12:22:43.331+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-22T12:37:57.949+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-22T12:37:57.985+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:37:58.002+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-22T12:37:58.004+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-22T12:37:58.693+0000] {taskinstance.py:2890} INFO - Executing <Task(EmptySkipOperator): skip_operator_2> on 2025-06-21 00:00:00+00:00
+[2025-06-22T12:37:58.709+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=118) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-22T12:37:58.712+0000] {standard_task_runner.py:72} INFO - Started process 173 to run task
+[2025-06-22T12:37:58.712+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_skip_dag', 'skip_operator_2', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '16', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_skip_dag.py', '--cfg-path', '/tmp/tmp9xmjrbgo']
+[2025-06-22T12:37:58.717+0000] {standard_task_runner.py:105} INFO - Job 16: Subtask skip_operator_2
+[2025-06-22T12:37:58.839+0000] {task_command.py:467} INFO - Running <TaskInstance: example_skip_dag.skip_operator_2 scheduled__2025-06-21T00:00:00+00:00 [running]> on host a5c304807a12
+[2025-06-22T12:37:59.026+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_skip_dag' AIRFLOW_CTX_TASK_ID='skip_operator_2' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-22T12:37:59.030+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-22T12:37:59.033+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-22T12:37:59.041+0000] {logging_mixin.py:190} INFO - Current task name:skip_operator_2 state:running start_date:2025-06-22 12:37:57.986873+00:00
+[2025-06-22T12:37:59.043+0000] {logging_mixin.py:190} INFO - Dag name:example_skip_dag and current dag run status:running
+[2025-06-22T12:37:59.049+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-22T12:37:59.172+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-22T12:37:59.176+0000] {taskinstance.py:353} INFO - Marking task as SKIPPED. dag_id=example_skip_dag, task_id=skip_operator_2, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250622T123757, end_date=20250622T123759
+[2025-06-22T12:37:59.313+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-22T12:37:59.399+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T12:37:59.421+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
