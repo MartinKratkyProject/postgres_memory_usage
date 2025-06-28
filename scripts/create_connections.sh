@@ -62,4 +62,4 @@ else
     airflow variables set monitor_tables "[]"
 fi
 
-echo "✅ Airflow Variables set!"
+echo "Airflow Variables set!"
