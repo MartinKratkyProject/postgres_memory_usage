@@ -264,6 +264,8 @@ services:
     volumes:
       - ${AIRFLOW_PROJ_DIR:-.}:/sources
       - ./scripts:/opt/airflow/scripts
+      - ./.env:/opt/airflow/.env
+
 
   airflow-cli:
     <<: *airflow-common
