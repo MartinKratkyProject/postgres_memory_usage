@@ -18,6 +18,7 @@ webserver_config.py
 # Environment files
 .env
 .env.*
+!.env.example
 
 # Virtualenv
 venv/
