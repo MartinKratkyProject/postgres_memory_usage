@@ -3,7 +3,6 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 from datetime import timedelta
-from pendulum import timezone
 from airflow.models import Variable
 import json
 
@@ -15,9 +14,22 @@ SCHEMA_NAME = Variable.get("monitor_schema")
 default_args = {
     "owner": "airflow",
     "retries": 1,
-    "retry_delay": timedelta(minutes=5),
+    "retry_delay": timedelta(minutes=2),
 }
 
+def ensure_metrics_table(**context):
+    """Create metrics table if it doesn't exist."""
+    create_sql = """
+    CREATE TABLE IF NOT EXISTS monitored_table_sizes (
+        id SERIAL PRIMARY KEY,
+        schema_name TEXT NOT NULL,
+        table_name TEXT NOT NULL,
+        size_bytes BIGINT NOT NULL,
+        checked_at TIMESTAMPTZ DEFAULT now() 
+    );
+    """
+    metrics_hook = PostgresHook(postgres_conn_id=METRICS_CONN_ID)
+    metrics_hook.run(create_sql)
 
 def log_table_sizes(**context):
     schema = SCHEMA_NAME
@@ -62,12 +74,16 @@ with DAG(
     start_date=days_ago(1),
     catchup=False,
     tags=["monitoring", "postgres"],
-    timezone=timezone("Europe/Paris"),
 ) as dag:
+
+    ensure_table = PythonOperator(
+        task_id="ensure_metrics_table",
+        python_callable=ensure_metrics_table,
+    )
 
     log_size = PythonOperator(
         task_id="log_table_sizes",
         python_callable=log_table_sizes,
     )
 
-    log_size
+    ensure_table >> log_size
