@@ -102,6 +102,23 @@ services:
       start_period: 5s
     restart: no
 
+  metrics-postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: ${METRICS_PG_USER}
+      POSTGRES_PASSWORD: ${METRICS_PG_PASSWORD}
+      POSTGRES_DB: ${METRICS_PG_DB}
+    volumes:
+      - metrics-db-volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"   # expose locally on 5433 if you want to connect from host
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${METRICS_PG_USER}"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: no
+
   pgadmin:
     image: dpage/pgadmin4
     environment:
@@ -305,3 +322,9 @@ services:
 volumes:
   postgres-db-volume-memory-usage:
   pgadmin-data-memory-usage:
+  metrics-db-volume:
+
+networks:
+  default:
+    external:
+      name: airflow-net

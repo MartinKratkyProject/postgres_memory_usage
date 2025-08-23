@@ -54,7 +54,6 @@ echo "Setting Airflow Variables..."
 
 airflow variables set target_pg_conn_id "${TARGET_PG_CONN_ID:-target_pg_conn}"
 airflow variables set metrics_pg_conn_id "${METRICS_PG_CONN_ID:-metrics_pg_conn}"
-airflow variables set monitor_schema "${MONITOR_SCHEMA:-public}"
 
 if [ -n "$MONITOR_TABLES_JSON" ]; then
     airflow variables set monitor_tables "$MONITOR_TABLES_JSON"
