@@ -111,7 +111,7 @@ services:
     volumes:
       - metrics-db-volume:/var/lib/postgresql/data
     ports:
-      - "5432:5432"   # expose locally on 5433 if you want to connect from host
+      - "5432:5432"
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "${METRICS_PG_USER}"]
       interval: 10s

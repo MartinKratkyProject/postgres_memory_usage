@@ -16,8 +16,8 @@ airflow.cfg
 webserver_config.py
 
 # Environment files
-.env
-.env.*
+!.env
+!.env.*
 !.env.example
 
 # Virtualenv
